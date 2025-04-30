@@ -1,0 +1,24 @@
+Correctness (GEval) Verbose Logs
+**************************************************
+
+Criteria:
+Check whather the actual output is correct according to the input
+
+Evaluation Steps:
+[
+    "Compare key details from the Input with the Actual Output to identify matches.",
+    "Verify that all necessary information in the Input is accurately reflected in the Actual Output.",
+    "Ensure there are no additional, unnecessary details in the Actual Output that aren't supported by the Input.",
+    "Check for any missing elements in the Actual Output that are present in the Input."
+]
+
+Score: 0.1759715438846301
+Reason: The query correctly uses MAX(salary) to find the maximum salary but incorrectly filters employees with age less than 30 instead of greater than  
+30.
+
+======================================================================
+0.1759715438846301
+SELECT MAX(salary) AS max_salary
+FROM employees
+WHERE age < 30
+The query correctly uses MAX(salary) to find the maximum salary but incorrectly filters employees with age less than 30 instead of greater than 30.      
