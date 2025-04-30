@@ -1,0 +1,22 @@
+Correctness (GEval) Verbose Logs
+**************************************************
+
+Criteria:
+Check whather the actual output is correct according to the input
+
+Evaluation Steps:
+[
+    "Verify if the actual output directly corresponds to the given input instructions or data.",
+    "Check for any discrepancies between the input requirements and the actual output results.",
+    "Assess whether the actual output fulfills the intended purpose or expected outcome as dictated by the input.",
+    "Confirm that no additional or missing information is present in the actual output compared to what was specified in the input."
+]
+
+Score: 0.087147917216333
+Reason: The query incorrectly finds the minimum salary for employees under 30 instead of the maximum salary for employees over 30.
+
+======================================================================
+0.087147917216333
+SELECT MIN(salary) AS max_salary
+FROM employees
+WHERE age < 30
