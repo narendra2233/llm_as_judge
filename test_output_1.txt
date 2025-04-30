@@ -1,0 +1,24 @@
+Correctness (GEval) Verbose Logs
+**************************************************
+
+Criteria:
+Check whather the actual output is correct according to the input
+
+Evaluation Steps:
+[
+    "Verify that the actual output corresponds directly to the input requirements.",
+    "Check if the actual output includes all necessary elements as specified by the input.",
+    "Ensure that there are no additional, irrelevant elements in the actual output that were not mentioned in the input.",
+    "Confirm that the actual output follows the same logical structure or order outlined by the input."
+]
+
+Score: 1.0
+Reason: The output correctly forms a SQL query to find the maximum salary of employees older than 30, matching input requirements without irrelevant     
+elements.
+
+======================================================================
+1.0
+SELECT MAX(salary) AS max_salary
+FROM employees
+WHERE age > 30
+The output correctly forms a SQL query to find the maximum salary of employees older than 30, matching input requirements without irrelevant elements.   
